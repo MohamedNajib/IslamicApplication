@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context=".ui.fragment.SebhaFragment">
+
+    <com.example.islamicapplication.custom_font.TextViewCustomFont
+        android:id="@+id/textViewCustomFont2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="بيم الله الرحم الرحيم"
+        android:textSize="@dimen/text16"
+        app:fontName="ME_QURAN_WEBFONT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/MentionImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension32"
+        android:background="@android:color/transparent"
+        android:src="@drawable/mention"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCustomFont2"
+        app:layout_constraintStart_toStartOf="@+id/textViewCustomFont2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomFont2" />
+
+    <ImageButton
+        android:id="@+id/RefreshIconImageButton"
+        android:layout_width="@dimen/dimension70"
+        android:layout_height="@dimen/dimension70"
+        android:layout_marginTop="@dimen/dimension24"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_refresh_icon"
+        app:layout_constraintEnd_toEndOf="@+id/MentionImageButton"
+        app:layout_constraintStart_toStartOf="@+id/MentionImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/MentionImageButton" />
+
+    <com.example.islamicapplication.custom_font.TextViewCustomFont
+        android:id="@+id/textViewCustomFont3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension16"
+        android:layout_marginEnd="16dp"
+        android:text="التسبيحات"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimension16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RefreshIconImageButton" />
+
+    <com.example.islamicapplication.custom_font.TextViewCustomFont
+        android:id="@+id/MentionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="@dimen/dimension24"
+        android:paddingEnd="@dimen/dimension24"
+        android:paddingTop="@dimen/dimension2"
+        android:paddingBottom="@dimen/dimension2"
+        android:text="0"
+        android:textColor="@color/colorGreyLite"
+        android:gravity="center"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCustomFont3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomFont3" />
+
+    <com.example.islamicapplication.custom_font.TextViewCustomFont
+        android:id="@+id/textViewCustomFont4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimension16"
+        android:layout_marginTop="@dimen/dimension16"
+        android:text="مجموع التسبيحات"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimension16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RefreshIconImageButton" />
+
+    <com.example.islamicapplication.custom_font.TextViewCustomFont
+        android:id="@+id/MentionTotalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension8"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="@dimen/dimension24"
+        android:paddingEnd="@dimen/dimension24"
+        android:paddingTop="@dimen/dimension2"
+        android:paddingBottom="@dimen/dimension2"
+        android:textColor="@color/colorGreyLite"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="@dimen/text16"
+        app:layout_constraintStart_toStartOf="@+id/textViewCustomFont4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomFont4" />
+
+    <Spinner
+        android:id="@+id/SpinnerSebhaFragment"
+        android:layout_width="@dimen/dimension200"
+        android:layout_height="@dimen/dimension40"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_background"
+        android:drawSelectorOnTop="false"
+        android:maxLines="1"
+        android:popupBackground="@android:color/transparent"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fontName" format="enum">
+        <enum name="KFC_NASKH_WEBFONT" value="1" />
+        <enum name="ME_QURAN_WEBFONT" value="2" />
+    </attr>
+
+</resources>
